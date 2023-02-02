@@ -5,6 +5,8 @@ import numpy as np
 import os
 from tkinter import filedialog
 
+#Obtener el directorio actual 
+directorio = os.getcwd()
 
 class DiseñoGuiApp:
     def __init__(self, master=None, translator=None):
@@ -50,7 +52,7 @@ class DiseñoGuiApp:
         
         #Seleccionar Archivo y mostrarlo en la consola
         def seleccionarArchivo():
-            archivo = filedialog.askopenfilename(initialdir="/", title="Selecciona un archivo", filetypes=(("Excel", "*.xls"), ("Excel", "*.xlsx") , ("todos los archivos", "*.*")))
+            archivo = filedialog.askopenfilename(initialdir=directorio, title="Selecciona un archivo", filetypes=(("Excel", "*.xls"), ("Excel", "*.xlsx") , ("todos los archivos", "*.*")))
             return archivo
 
         def procesarArchivo():
