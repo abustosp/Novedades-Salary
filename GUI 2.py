@@ -57,10 +57,6 @@ class DiseñoGuiApp:
 
         Periodo_input = tk.StringVar()
 
-        def my_callback(var, index, mode):  
-          print("Traced variable {}".format(Periodo_input.get))
-        Periodo_input.trace_add("write", my_callback)
-
         #Hacer que el boton periodo almacele el valor del input en una variable
         def Periodo():
             Periodo = self.Input_Periodo.get()
@@ -73,24 +69,12 @@ class DiseñoGuiApp:
             validate="all",
             width=40)
         self.Input_Periodo.grid(column=1, row=3)
-        
-        
-        self.Boton_Periodo = ttk.Button(Toplevel_1)
-        self.Boton_Periodo.configure(text=_('Seleccionar Período'))
-        self.Boton_Periodo.configure(command=Periodo)
-        self.Boton_Periodo.grid(column=0, pady=15, row=5)
-
 
 
         self.Boton_Procesar = ttk.Button(Toplevel_1)
         self.Boton_Procesar.configure(text=_('Procesar Archivo'))
         self.Boton_Procesar.grid(column=1, pady=15, row=5)
-        self.Boton_Exportar = ttk.Button(Toplevel_1)
-        self.Boton_Exportar.configure(text=_('Exportar Archivo'))
-        self.Boton_Exportar.grid(column=3, row=5)
-
-
-
+        
         #una vez que se almacenó el valor del input en la variable Periodo_input, se muestra en el label Periodo_Seleccionado
 
         self.Periodo_Seleccionado = ttk.Label(Toplevel_1, textvariable=Periodo_input)
