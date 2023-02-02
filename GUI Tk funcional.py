@@ -17,6 +17,7 @@ class DiseñoGuiApp:
         Toplevel_1.minsize(540, 230)
         Toplevel_1.resizable(False, False)
         Toplevel_1.title("Excel a Salary por Agustín Bustos Piasentini")
+        Toplevel_1.iconbitmap("ABP-blanco-en-fondo-negro.ico")
         self.Texto_de_Bienvenida = ttk.Label(Toplevel_1)
         self.Texto_de_Bienvenida.configure(
             anchor="center",
@@ -150,7 +151,7 @@ class DiseñoGuiApp:
 
         #botón para seleccionar el archivo y procesarlo
         self.Boton_Procesar = ttk.Button(Toplevel_1)
-        self.Boton_Procesar.configure(text=_('Seleccionar Archivo y Procesar'))
+        self.Boton_Procesar.configure(text=_('Seleccionar, Procesar y Exportar Archivos a la Carpeta "Generados/Periodo"'))
         self.Boton_Procesar.configure(command=procesarArchivo)
         self.Boton_Procesar.grid(column=1, pady=15, row=5)
         
