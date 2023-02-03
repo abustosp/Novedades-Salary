@@ -47,7 +47,6 @@ class DiseñoGuiApp:
         #Hacer que el boton periodo almacele el valor del input en una variable
         def fun_Periodo():
             Periodo = self.Input_Periodo.get()
-            print(Periodo_input.get())
             return Periodo
         
         #Seleccionar Archivo y mostrarlo en la consola
