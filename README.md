@@ -10,7 +10,7 @@ El licenciamiento es bajo PL (es decir que no se puede distribuir comercialmente
 
 ## Ejecución del Programa
 
-1. Instalar el .exe correspondiente a la versión que se quiera utilizar. Existen actualmente 2 versiones del Programa:
+1. Instalar el ejecutable del programa, el .exe e ir seleccionando los botones de acuerdo a los archivos que se poseen.
 
 2. Una vez instalado el programa se debe ejecutarlo, para lo cual es importante:
 
